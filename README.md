@@ -37,7 +37,7 @@
 ## 1. 学习[git](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
 ## 2. 学习[markdown](https://guides.github.com/features/mastering-markdown/#what)
 ## 3. 签个到吧
-注册github账号，然后`fork`仓库`https://github.com/blackhater1/ctf_web`,在`笔记`目录下的`SignIn.md`目录下添加自己的签到信息。如下所示：（注意，不需要添加自己的真实姓名，以你的github账号名称就行，要注意保护自己的隐私信息。）
+注册github账号，然后`fork`仓库`https://github.com/blackhater1/ctf_web`,在`笔记`目录下的`SignIn.md`文件内添加自己的签到信息。如下所示：（注意，不需要添加自己的真实姓名，以你的github账号名称就行，要注意保护自己的隐私信息。）
 
 id | name | say something
 :--: | :--: | :--:
