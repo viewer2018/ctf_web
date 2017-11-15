@@ -1,4 +1,4 @@
-[TOC]
+
 
 大家好，在接下来的一个多月的时间里，我会跟大家一起学习CTF Web方面的知识。很高兴与大家一起同行。
 
@@ -27,6 +27,7 @@
 2. 学习[markdown](https://guides.github.com/features/mastering-markdown/#what)
 3.  签个到吧
 注册github账号，然后`fork`仓库`https://github.com/blackhater1/ctf_web`,在`web1_web`基础目录下的`SignIn.md`目录下添加自己的签到信息。如下所示：（注意，不需要添加自己的真实姓名，以你的github账号名称就行，要注意保护自己的隐私信息。）
+
 id | name | say something
 :--: | :--: | :--:
 x|张三|一级棒
