@@ -36,12 +36,13 @@
 扯了这么多，该做点什么了。
 ## 1. 学习[git](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
 ## 2. 学习[markdown](https://guides.github.com/features/mastering-markdown/#what)
-## 3.  签个到吧
-注册github账号，然后`fork`仓库`https://github.com/blackhater1/ctf_web`,在`web1_web`基础目录下的`SignIn.md`目录下添加自己的签到信息。如下所示：（注意，不需要添加自己的真实姓名，以你的github账号名称就行，要注意保护自己的隐私信息。）
+## 3. 签个到吧
+注册github账号，然后`fork`仓库`https://github.com/blackhater1/ctf_web`,在`笔记`目录下的`SignIn.md`目录下添加自己的签到信息。如下所示：（注意，不需要添加自己的真实姓名，以你的github账号名称就行，要注意保护自己的隐私信息。）
 
 id | name | say something
 :--: | :--: | :--:
 x|张三|一级棒
+
 
 
 ----
@@ -50,5 +51,6 @@ x|张三|一级棒
 1. 是可以共享自己优秀的学习路径，
 1. 是通过自己每次的提交，可以清楚的看到自己成长的轨迹
 1. 同时也是作为一种自我督促
+
 **凡事贵在坚持**
 
