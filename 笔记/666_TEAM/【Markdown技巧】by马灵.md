@@ -141,12 +141,13 @@ Github： 提供Git仓库托管服务的
 git remote add origin git@github.com:michaelliao/learngit.git
 (需将上面的michaelliao替换成你自己的Github账户名，关联是没有问题的，但是推送不上去，因为你的SSH Key公钥不在我的账户列表里)
 ```
-
 3.  把本地仓库推送到Github仓库
-`git push -u origin master 
+```
+git push -u origin master 
 (将当前分支master推送到远程, -u 表示不但推送，而且建立本地和远程的相互关联，再次推送可以就简化指令)
 git push origin master (初次-u后，都可以简写)
-`
+```
+
 4. SSH 警告： 确认Github的Key指纹信息是否真的来自Github的服务器，若yes则添加到known hosts中，若担心，输入yes前，校验Github的RSA key的fingerprinter是否与SSH连接给出的一致
 
 
