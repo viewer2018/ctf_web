@@ -30,4 +30,3 @@ SP： Stack Pointer，堆栈指针。 
 控制寄存器：CR0、CR2、CR3其他寄存器             
 调试寄存器：D0、D1、D2、D3、D6和D7              
 测试寄存器：TR3、TR4、TR5、TR6、TR 
-
