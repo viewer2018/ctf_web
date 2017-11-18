@@ -38,26 +38,27 @@ git status （查看是否被修整过）
 git difference (git diff)
 ```
 
+
 ### 版本回退
 
-(当文件修改到一定程度，保存快照，改乱或误删文件，从最近commit恢复)
+* (当文件修改到一定程度，保存快照，改乱或误删文件，从最近commit恢复)
 
 ### 查看历史记录
 
- git log
- git log --pretty=oneline (简约显示：commitid（由SHA1计算出来的数字）, 修改内容)
+ * git log
+ * git log --pretty=oneline (简约显示：commitid（由SHA1计算出来的数字）, 修改内容)
 
 ### 回退到上一个版本
 
-git reset
-git reset --hard HEAD^
+* git reset
+* git reset --hard HEAD^
 
 ### 指定回到历史某个版本
 
-git reset --hard {commit id} (前提是你要知道你刚才的版本号是多少，版本号没必要写全)
-git reset --hard HEAD^ (HEAD指向的是当前版本，^回退到上一个版本)
-git reset --hard HEAD^^ (回退到上上个版本)
-git reset --hard HEAD~100 (回退往上100个版本)
+* git reset --hard {commit id} (前提是你要知道你刚才的版本号是多少，版本号没必要写全)
+* git reset --hard HEAD^ (HEAD指向的是当前版本，^回退到上一个版本)
+* git reset --hard HEAD^^ (回退到上上个版本)
+* git reset --hard HEAD~100 (回退往上100个版本)
 
 >原因：Git内部有个指向当前版本的HEAD指针，当回退版本时HEAD直接指向commit id 所属的历史项目
 
@@ -216,7 +217,7 @@ git push origin master (初次-u后，都可以简写)
     * 实战：
         * git checkout -b feature-vulcan --> git add vulcan.py --> git status --> git commit -m "add feature vulcan" --> git checkout dev(切回dev准备合并) --> git checkout -d feature-vulcan(删除此新功能分支，出现提示) --> git branch -D feature-vulcan(分支还没有整合，强行删除的话会丢失掉修改，这里直接强行删除)
 
-###多人协作
+### 多人协作
 
 * 情景： 有推送权限，可以看到push地址
 * 远程仓库的默认名称： origin
