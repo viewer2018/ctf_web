@@ -50,7 +50,7 @@
      向远程仓库推送本地分支所有内容：git push -u origin master 
      推送最新修改：git push origin master
    
-     克隆一个远程仓库：git clone git@github.com:github名称/仓库名称(远程仓库）
+     克隆一个远程仓库：git clone git@github.com:github名称/仓库名称(远程仓库）!
 
    
  
