@@ -11,4 +11,4 @@ id | name | say something
 9|	sec0dn |  密码学李老师前来报道
 10| Anonymous | i'll be the best hacker in the world
 11|  clm136526 | 头皮发麻
-12|  huangsunsky | 好好学习
+12|  DNBAA  | ：）
