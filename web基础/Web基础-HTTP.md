@@ -35,7 +35,7 @@ http://www.w3school.com.cn/php/index.asp
 1. 浏览器 firefox或者chrome，（最好找旧版本的，因为新版本的限制多）
 1. 抓包工具burpsuite
  * 下载
- `链接: https://pan.baidu.com/s/1eSkyF0e 密码: e27e`(7天内有效)
+ `链接: https://pan.baidu.com/s/1eSkyF0e 密码: e27e`(有时间限制，请尽快下载)
 * 使用介绍
 	* http://www.360doc.com/content/16/0425/10/29967943_553593234.shtml
 	* https://www.gitbook.com/book/t0data/burpsuite/details
