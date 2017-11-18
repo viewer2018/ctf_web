@@ -6,12 +6,12 @@
 web知识点很多，而且很杂。我们只能挑一些有共性的来学，选一些来讲，碰到不会的就现学现查，大部分靠自觉。
 
 # 主要内容
- 本周计划要学的东西分为三个方面，
-## 协议
+ 本周计划要学的东西分为四个方面，
+## 1. 协议
 1. HTTP
  推荐图书《图解HTTP》
 
-## 语言
+## 2. 语言
 1. HTML/CSS
 http://www.w3school.com.cn/h.asp
 1. javascript
@@ -23,12 +23,12 @@ http://www.w3school.com.cn/b.asp
  https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000
 1. php
 http://www.w3school.com.cn/php/index.asp
-## 漏洞
+## 3. 了解Web漏洞类型
 1. OWASP
  http://www.owasp.org.cn/owasp-project/OWASPTop102017RC2.pdf
 1. Web 安全深度剖析
  
-## 实验环境
+## 4. 实验环境
 1. 搭建渗透测试环境
  我这用的是win7+xampp
  http://www.freebuf.com/sectool/102661.html
