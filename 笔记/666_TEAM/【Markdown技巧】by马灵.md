@@ -11,33 +11,33 @@
 
 ### 添加文件到git指定项目托管文件夹
 
-- ```
+
+```
 git add readme.txt (readme.txt一定要在.git存在的目录下)
 ```
 
-- ```
+```
 git add file1.txt file2.txt (添加多个文件)（实际上是把文件修改添加到暂存区）
 ```
 
 ### 将文件添加到本地仓库
 
-- ```
+```
 git commit -m "wrote a readme file" 
  (-m后面是输入本次提交的说明)
 ```
 
 ### 查看工作区当前的状态
 
-- ```
+```
 git status （查看是否被修整过）
 ```
 
 ### 查看本地仓库中某个文件最近一次怎么修改的
 
-- ```
+```
 git difference (git diff)
 ```
-
 
 ### 版本回退
 
