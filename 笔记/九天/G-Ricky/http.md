@@ -1,18 +1,18 @@
 # HTTP
-### Capture
+## Capture
+### Chrome Request
 ![](../../../src/ricky.20171118211758.png)
-**Chrome Request**
 
+### Chrome Response
 ![](../../../src/ricky.20171118211914.png)
-**Chrome Response**
 
+### Burpsuite Request
 ![](../../../src/ricky.20171118212259.png)
-**Burpsuite Request**
 
+### Burpsuite Response
 ![](../../../src/ricky.20171118212326.png)
-**Burpsuite Response**
 
-### Http request and response
+## Http request and response
 
 首先浏览器根据浏览器设置、系统信息、url信息组成http request包，根据url判定协议，chrome输入的url如果没有指定协议默认使用http
 
