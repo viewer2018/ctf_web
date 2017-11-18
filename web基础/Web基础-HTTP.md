@@ -201,6 +201,7 @@ Set-Cookie: SID=5KXIOt4cS; expires=Mon, 31-May-2010 20:46:01 GMT; path=/; domain
 
 ## 15. HTTP Proxies
 burp拦截HTTP请求的原理图
+
 ![image](../src/1.png)
 
 
