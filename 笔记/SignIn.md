@@ -18,3 +18,4 @@ id | name | say something
 16|a972950363| 666
 17|  parrot  | 新的开始
 18|lracker|西点赶超蓝莲花
+19| Avscx | NICE!
