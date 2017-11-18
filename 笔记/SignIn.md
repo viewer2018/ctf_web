@@ -39,3 +39,4 @@ id | name | say something
 37|Melody97|enen
 38|ZoEplA| ......
 39|hxxxxxx|溜了溜了
+40|WeC9|   你好，周末 加油！！！
