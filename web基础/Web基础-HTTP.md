@@ -211,7 +211,5 @@ burp拦截HTTP请求的原理图
 **请按要求格式提交作业：在版本库中所在组内创建以自己github账号名字命名的文件夹，然后把作业放在自己文件夹内，作业文件名称让人能看懂就行，通过PR提交**
 
 
-
-# 参考
 [1]: http://www.jianshu.com/p/8a125a16f5d3
 [2]: https://sunshinevvv.coding.me/blog/2017/02/09/HttpGETv.s.POST/
