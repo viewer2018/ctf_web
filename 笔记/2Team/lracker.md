@@ -1,14 +1,14 @@
 什么是汇编语言？
 汇编语言是最接近计算机核心的一种编码语言。
 进制转换
-  
+![test](https://github.com/lmwzero/ctf_web/blob/master/%E7%AC%94%E8%AE%B0/QQ%E6%88%AA%E5%9B%BE20171116212400.png)
 
 寄存器
 寄存器位于cpu中，可以保存特定长度的数据
 32位的寄存器有EAX,ECX,EDX,EBX,ESP,EBP,ESI,EDI
 16位的寄存器有AX,CX,DX,BX,SP,BP,SI,DI
 8位的寄存器有AH,CH,DH,BH,AL,CL,CL,BL
-
+![test](https://github.com/lmwzero/ctf_web/blob/master/%E7%AC%94%E8%AE%B0/%E5%9B%BE%E7%89%872.png)
 
 32位下
 
