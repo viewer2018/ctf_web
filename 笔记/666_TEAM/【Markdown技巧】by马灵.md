@@ -66,9 +66,10 @@ git difference (git diff)
 
 原因: 回退到某个版本，关掉了电脑，第二天早上后悔，想恢复新版本，但未知commit id
 
-- ```
+```
 git reflog（记录每一次命令，包括项目的commit id ）
 ```
+
 
 ### 工作区和暂存区
 
