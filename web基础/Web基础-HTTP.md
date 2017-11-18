@@ -42,7 +42,7 @@ http://www.w3school.com.cn/php/index.asp
 	* https://www.sinosky.org/burp-suite-walkthrough.html
 	* https://t0data.gitbooks.io/burpsuite/content/#1F
 
-下面我们来学学HTTP
+下面是我学HTTP的笔记，看完可以对HTTP有个简略印象，要学得深入点，建议看完《图解HTTP》，并多做实验观察，多思考，多动手。
 
 ---
 # HTTP学习笔记
