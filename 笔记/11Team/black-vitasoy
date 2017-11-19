@@ -1,0 +1,32 @@
+汇编语言
+汇编语言是一只接近计算机核心编码且可以被人读懂的语言
+Need : 胆量,知识,开放,经验,脑子
+处理器执行被编译过的汇编语言,也就是机器语言
+处理器任务 : 从内存中获取机器语言的指令,和译码,然后执行一系列操作
+寄存器位于CPU, 可以对数据进行存储
+通用寄存器分类
+EAX: 进行运算,可作为内存偏移指针
+EBX:内存偏移指针
+ECX:特定指令的计数,可作为内存偏移指针
+EDX:EAX的溢出寄存器,可作为内存偏移指针
+Window  Git安装 :https://git-for-windows.github.io
+安装完成后，在开始菜单里找到“Git”->“Git Bash”
+最后设置 : 
+$ git config --global user.name "Your Name"
+$ git config --global user.email "email@example.com"
+创建一个空目录版本库
+$ mkdir learngit     $ cd learngit     $ pwd
+/Users/michael/learngit
+显示 :/c/Users/Administrator/learngit
+Git init
+编码UTF-8
+一定要放到learngit目录下（子目录也行）
+$ git add readme.txt
+$git commit -m "wrote a readme file"
+$ git add file1.txt
+$ git add file2.txt file3.txt
+$ git commit -m "add 3 files."
+与(&): 两个都为一
+或(|):一个为一即可
+非(~):把结果反过来
+异或(xor):两个加起来mod2
