@@ -39,7 +39,7 @@ id | name | say something
 37|Melody97|enen
 38|ZoEplA| ......
 39|hxxxxxx|溜了溜了
-40|WeC9|   你好，周末 加油！！！
+40|WeC9|   你好，周末 加油！！！emmmm
 41|lmwzero|11111
 42|Michael|逆向来凑个热闹
 43|black-vitasoy|bug
@@ -50,3 +50,4 @@ id | name | say something
 48|onerice0111|原来之前一直在自己库里
 49|liqianlan|同上
 50|lll97|原来之前一直在自己库里
+51|uioonm|emmmm
