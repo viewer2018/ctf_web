@@ -47,4 +47,5 @@ id | name | say something
 45|firaaa|加油加油吧
 46|zidahong|= =
 47|onerice0111|em.......
-48|onerice0111|原来之前一直在自己库里
+48|onerice0111|原来之前一直在自己库里  
+49|faker8|签到
