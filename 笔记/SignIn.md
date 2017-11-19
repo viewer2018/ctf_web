@@ -42,4 +42,7 @@ id | name | say something
 40|WeC9|   你好，周末 加油！！！
 41|lmwzero|11111
 42|Michael|逆向来凑个热闹
-43|zidahong|= =
+43|black-vitasoy|bug
+44|aassqq|123
+45|firaaa|加油加油吧
+46|zidahong|= =
