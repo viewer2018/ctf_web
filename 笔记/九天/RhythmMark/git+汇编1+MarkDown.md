@@ -14,7 +14,9 @@
 十个漏洞。
 
 ### 2.git
+
 **---网页版---**
+
 1）每个GitHub项目右上角都有这三个按钮
 - watch--关注--能收到相关邮件
 - star--点赞，收藏--可在your satrs中找到该项目
@@ -28,28 +30,36 @@ create new file
 3)pull request
 
 **---git---**
+
 参照：[廖雪峰的git教程](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
+
 0)安装：
 - Linux：sudo apt-get install git
 - Windows：[镜像地址](https://git-for-windows.github.io/)
 
 1)创建版本库
+
 ii)mkdir learngit    //创建空目录
 - cd learngit          //进入空目录
 - cd(Windows)/pwd(MAC)              //显示当前目录
 
-ii)git init             //初始化
+iii)git init             //初始化
 
 2)新建文件
 
 i) 用Notepad++新建txt文件并保存到lerngit目录下
+
 ii)git add readme.txt    //将文件添加到仓库
+
 iii)git commit -m "wrote a readme file"   //把（缓冲区的文件）文件提交给仓库，并添加下相关说明
 
 3)修改文件
 i)使用Notepad++修改
+
 ii)git add xxx.txt
+
 iii)git commit -m "XXX"   //存盘
+
 **要记得先add再commit**
 
 4)回退
