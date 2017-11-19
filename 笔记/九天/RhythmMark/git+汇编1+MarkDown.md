@@ -39,11 +39,11 @@ create new file
 
 1)创建版本库
 
-ii)mkdir learngit    //创建空目录
+i)mkdir learngit    //创建空目录
 - cd learngit          //进入空目录
 - cd(Windows)/pwd(MAC)              //显示当前目录
 
-iii)git init             //初始化
+ii)git init             //初始化
 
 2)新建文件
 
@@ -81,10 +81,13 @@ iii)git commit -m "XXX"   //存盘
 //没add过的文件状态是untracked的
 
 6)撤销修改
+
 - git checkout --readme.txt   //文件修改后，add前，可以撤销修改，也就是撤销工作区修改
 
 - //如果是add了之后：
+
 i)git reset HEAD readme.txt  //撤销暂存区修改
+
 ii)git checkout -- readme.txt  //撤销工作区修改
 
 
