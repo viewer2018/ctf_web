@@ -33,3 +33,6 @@
 >引用
 >
 >郭德纲
+Name | Academy | score
+- | :-: | -:
+sasadsadadsadada | sasafafa | sdfsdgs
