@@ -20,3 +20,22 @@
 - EIP(重要) : 同CS一同指向将执行的命令的地址,不能直接修改值
 - ESP 指向堆栈中被操作的地址,可修改,一般软件逆向就用得到
 - 还有 控制寄存器,调试寄存器,测试寄存器
+## git
+Window 下  [Git安装](https://git-for-windows.github.io)
+安装完成后，在开始菜单里找到`Git`->`Git Bash`
+### 最后设置 : 
+  $ git config --global user.name "Your Name"
+  $ git config --global user.email "email@example.com"
+## 创建一个空目录版本库
+  $ mkdir learngit     $ cd learngit     $ pwd
+  /Users/michael/learngit
+  显示 :/c/Users/Administrator/learngit
+  Git init
+## 编码UTF-8
+- 一定要放到learngit目录下（子目录也行）
+- $ git add readme.txt
+- $git commit -m "wrote a readme file"
+- $ git add file1.txt
+- $ git add file2.txt file3.txt
+- $ git commit -m "add 3 files."
+
