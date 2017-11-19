@@ -14,7 +14,7 @@
 十个漏洞。
 
 ### 2.git
----网页版---
+**---网页版---**
 1）每个GitHub项目右上角都有这三个按钮
 - watch--关注--能收到相关邮件
 - star--点赞，收藏--可在your satrs中找到该项目
@@ -27,7 +27,7 @@ create new file
 
 3)pull request
 
----git---
+**---git---**
 参照：[廖雪峰的git教程](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
 0)安装：
 - Linux：sudo apt-get install git
