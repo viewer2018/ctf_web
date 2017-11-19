@@ -45,3 +45,4 @@ id | name | say something
 43|black-vitasoy|bug
 44|aassqq|123
 45|firaaa|加油加油吧
+46|zidahong|= =
