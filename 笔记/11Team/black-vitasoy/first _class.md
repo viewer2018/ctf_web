@@ -29,7 +29,9 @@ Window 下  [Git安装](https://git-for-windows.github.io)
 ## 创建一个空目录版本库
   $ mkdir learngit     $ cd learngit     $ pwd
   /Users/michael/learngit
+  
   显示 :/c/Users/Administrator/learngit
+  
   Git init
 ## 编码UTF-8
 - 一定要放到learngit目录下（子目录也行）
@@ -38,4 +40,21 @@ Window 下  [Git安装](https://git-for-windows.github.io)
 - $ git add file1.txt
 - $ git add file2.txt file3.txt
 - $ git commit -m "add 3 files."
-
+## 密码学知识
+### [二进制，八进制，十进制，十六进制的概念以及相互转换](http://www.360doc.com/content/17/0227/22/8067272_632545159.shtml)
+- 与(&): 两个都为一
+- 或(|):一个为一即可
+- 非(~):把结果反过来
+- 异或(xor):两个加起来mod2
+## 原码,补码,反码
+- 原码就是符号位加上真值的绝对值, 即用第一位表示符号, 其余位表示值
+- 正数的补码就是其本身
+- 正数的反码是其本身
+## 密码学基本信息
+- 明文: 未加密的
+- 密文:加密了的
+- 秘钥:用来加密的函数
+- 公钥:不保密的秘钥
+- 私钥:保密的秘钥
+- 密钥空间:加密秘钥大小的范围
+- 凯撒密码:代换密码,偏移量为3,A->D
