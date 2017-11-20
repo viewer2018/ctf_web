@@ -38,57 +38,57 @@ create new file
 - Windows：[镜像地址](https://git-for-windows.github.io/)
 
 1)创建版本库
+i) 
+-  `mkdir learngit`         //创建空目录
+-  `cd learngit `            //进入空目录
+- ` cd(Windows)`或`pwd(MAC) `              //显示当前目录
 
-i)mkdir learngit    //创建空目录
-- cd learngit          //进入空目录
-- cd(Windows)/pwd(MAC)              //显示当前目录
-
-ii)git init             //初始化
+ii)`git init `            //初始化
 
 2)新建文件
 
 i) 用Notepad++新建txt文件并保存到lerngit目录下
 
-ii)git add readme.txt    //将文件添加到仓库
+ii)`git add readme.txt`    //将文件添加到仓库
 
-iii)git commit -m "wrote a readme file"   //把（缓冲区的文件）文件提交给仓库，并添加下相关说明
+iii)`git commit -m "wrote a readme file" `  //把（缓冲区的文件）文件提交给仓库，并添加下相关说明
 
 3)修改文件
 i)使用Notepad++修改
 
-ii)git add xxx.txt
+ii)`git add xxx.txt`
 
-iii)git commit -m "XXX"   //存盘
+iii)`git commit -m "XXX" `  //存盘
 
 **要记得先add再commit**
 
 4)回退
 
-- git log      //显示提交日志
-- git log --pretty=oneline       //简化，注：第一个参数为commit id
+- `git log`      //显示提交日志
+- `git log --pretty=oneline`       //简化，注：第一个参数为commit id
 
-- git reset --hard HEAD^    //回退到上一版本
+- `git reset --hard HEAD^ `   //回退到上一版本
 //若在Windows下，会出现个“MORE”，应改成 git reset --hard "HEAD^"
 //"HEAD"后面的“^”表示回退为上一个版本，“^^”为两个，当然如果是100个的话为"~100"
- //感谢：[Solitary_King](http://blog.csdn.net/Solitary_King/article/details/73739636)[簡睿](http://jdev.tw/blog/4239/git-rest-hard-head-in-windows-cmd-exe)
-- git reset --hard 9a4a7779  //回到最新版，数字为该版本的commit id的前几位
+ //感谢：[Solitary_King](http://blog.csdn.net/Solitary_King/article/details/73739636)   [簡睿](http://jdev.tw/blog/4239/git-rest-hard-head-in-windows-cmd-exe)
+- `git reset --hard 9a4a7779`  //回到最新版，数字为该版本的commit id的前几位
 
 5）工作区和版本库
 - 它们长这样：
 ![](https://cdn.webxueyuan.com/cdn/files/attachments/001384907702917346729e9afbf4127b6dfbae9207af016000/0)
 
-- git status    //查看暂存区(stage)状态
+- `git status`    //查看暂存区(stage)状态
 //没add过的文件状态是untracked的
 
 6)撤销修改
 
-- git checkout --readme.txt   //文件修改后，add前，可以撤销修改，也就是撤销工作区修改
+- `git checkout --readme.txt`   //文件修改后，add前，可以撤销修改，也就是撤销工作区修改
 
 - //如果是add了之后：
 
-i)git reset HEAD readme.txt  //撤销暂存区修改
+i)`git reset HEAD readme.txt ` //撤销暂存区修改
 
-ii)git checkout -- readme.txt  //撤销工作区修改
+ii)`git checkout -- readme.txt`  //撤销工作区修改
 
 
 
