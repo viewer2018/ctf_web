@@ -66,12 +66,17 @@ iii)`git commit -m "XXX" `  //存盘
 4)回退
 
 - `git log`      //显示提交日志
+
 - `git log --pretty=oneline`       //简化，注：第一个参数为commit id
 
 - `git reset --hard HEAD^ `   //回退到上一版本
+
 //若在Windows下，会出现个“MORE”，应改成 git reset --hard "HEAD^"
+
 //"HEAD"后面的“^”表示回退为上一个版本，“^^”为两个，当然如果是100个的话为"~100"
+
  //感谢：[Solitary_King](http://blog.csdn.net/Solitary_King/article/details/73739636)   [簡睿](http://jdev.tw/blog/4239/git-rest-hard-head-in-windows-cmd-exe)
+ 
 - `git reset --hard 9a4a7779`  //回到最新版，数字为该版本的commit id的前几位
 
 5）工作区和版本库
