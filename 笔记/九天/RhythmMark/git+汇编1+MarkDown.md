@@ -84,6 +84,7 @@ iii)`git commit -m "XXX" `  //存盘
 ![](https://cdn.webxueyuan.com/cdn/files/attachments/001384907702917346729e9afbf4127b6dfbae9207af016000/0)
 
 - `git status`    //查看暂存区(stage)状态
+
 //没add过的文件状态是untracked的
 
 6)撤销修改
