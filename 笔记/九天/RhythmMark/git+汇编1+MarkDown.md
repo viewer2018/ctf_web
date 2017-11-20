@@ -54,6 +54,7 @@ ii)`git add readme.txt`    //将文件添加到仓库
 iii)`git commit -m "wrote a readme file" `  //把（缓冲区的文件）文件提交给仓库，并添加下相关说明
 
 3)修改文件
+
 i)使用Notepad++修改
 
 ii)`git add xxx.txt`
