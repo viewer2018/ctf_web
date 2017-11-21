@@ -248,6 +248,7 @@ SHOW VARIABLES LIKE "general_log%"
 ，进行查看，这时我们看到的是OFF，还有日志所在的位置，使用此默认位置
 
 ![图片标题](http://img.blog.csdn.net/20161121151649785?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center)
+
 可以通过如下语句开启，
 ```
 SET GLOBAL general_log = 'ON'
