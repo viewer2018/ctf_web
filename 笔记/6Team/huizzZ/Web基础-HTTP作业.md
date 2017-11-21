@@ -7,13 +7,13 @@
 利用buupsuite抓取广州大学官网
 
 请求头  
-![请求头](../src/request.jpg)
+![请求头](https://github.com/huixinzzZ/ctf_web/blob/master/src/request.png)
 
 响应头  
-![响应头](../src/response.jpg)
+![响应头](https://github.com/huixinzzZ/ctf_web/blob/master/src/response.png)
 
 firefox firebug  
-![firefox](../src/firefox.jpg)
+![firefox](https://github.com/huixinzzZ/ctf_web/blob/master/src/firefox.png)
 
 
 ***
