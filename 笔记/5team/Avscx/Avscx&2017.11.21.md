@@ -24,7 +24,7 @@
 
    ![9](https://github.com/Avscx/ctf_web/blob/master/%E7%AC%94%E8%AE%B0/5team/Avscx/image/9.png)
    
-   -请求头、响应头例子
+   - 请求头、响应头例子
    
    ![8](https://github.com/Avscx/ctf_web/blob/master/%E7%AC%94%E8%AE%B0/5team/Avscx/image/8.png)
    
