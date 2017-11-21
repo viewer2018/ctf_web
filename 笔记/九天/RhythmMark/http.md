@@ -57,8 +57,11 @@ iii)缺少状态意味着如果后续处理需要前面的信息，则它必须�
 
 
 14. 请求方法
+
 ![](https://github.com/DigBullTech-viewer/ctf_web/raw/master/src/1510982805904.png)
+
 15. 响应头信息
+
 ![](https://github.com/DigBullTech-viewer/ctf_web/raw/master/src/1510982839885.png)
 16. - Content-Type
 - 内容类型
@@ -102,14 +105,18 @@ iii)缺少状态意味着如果后续处理需要前面的信息，则它必须�
 1.
 **chrome**
 - 请求头
+
 ![](https://github.com/RhythmMark/hello-world/blob/master/crc/header1.png?raw=true)
 - 响应头
+
 ![](https://github.com/RhythmMark/hello-world/blob/master/crc/header2.png?raw=true)
 
 **burpsuit**
 - 请求头
+
 ![](https://github.com/RhythmMark/hello-world/blob/master/crc/header3.png?raw=true)
 - 响应头
+
 ![](https://github.com/RhythmMark/hello-world/blob/master/crc/header4.png?raw=true)
 
 2. 输入回车后
