@@ -25,12 +25,12 @@ git 中 HEAD表示当前版本  HEAD^表示上个版本  HEAD^^表示上�
 - 总之，就是让这个文件回到最近一次`git commit`或`git add`时的状态。
 
 　
->`git reset`命令既可以回退版本，也可以把暂存区的修改回退到工作区。当我们用HEAD时，表示最新的版本。
+> `git reset`命令既可以回退版本，也可以把暂存区的修改回退到工作区。当我们用HEAD时，表示最新的版本。
 
 <br>
 输入`rm file`  可以删除文件，然后你就会有两种选择
-- 确实需要删除，则需要再输入`git rm`
-- 删错了，则输入`git checkout -- file` 撤销删除
+- 确实需要删除，则需要再输入`git rm`
+- 删错了，则输入`git checkout -- file` 撤销删除
 但是即使是删除了，也可以用`git reset HEAD file` 再次恢复文件
 
 ### 仓库操作
