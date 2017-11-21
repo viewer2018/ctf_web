@@ -50,11 +50,11 @@ id | name | say something
 48|onerice0111|原来之前一直在自己库里
 49|liqianlan|同上
 50|lll97|原来之前一直在自己库里
-51 | faker |签到
+51| faker|签到
 52|uioonm|emmmm
 52|jsomething-for-nothing|披马甲上阵
 53|mongmei233|hei
-54丨dogbigface丨我要晕啦
+54|dogbigface|我要晕啦
 55|Arzuu1216|  签到
 56|Allen|   emmmmmmmmmmm..
 57|LLLAAA1| lllll
@@ -62,3 +62,4 @@ id | name | say something
 59|faker8|签到
 60|IchBinHao|Sorry i am late
 61| parrot | 新的开始
+62|  omiga |  棒棒哒
