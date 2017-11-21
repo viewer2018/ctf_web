@@ -1,11 +1,11 @@
-### 创建版本库
+### 创建版本库
 初始化一个Git仓库，使用`git init`命令。
 添加文件到Git仓库，分两步：
 第一步，使用命令`git add file`，注意，可反复多次使用，添加多个文件；
 第二步，使用命令`git commit`，完成
 `git commit -m` "修改注释"
 
-### 基本命令
+### 基本命令
 `git status` 查看缓冲区状态
 `git diff` 查看修改内容
 `git log` 显示从最远到最近的提交日志
@@ -33,7 +33,7 @@ git 中 HEAD表示当前版本  HEAD^表示上个版本  HEAD^^表示上�
 - 删错了，则输入`git checkout -- file` 撤销删除
 但是即使是删除了，也可以用`git reset HEAD file` 再次恢复文件
 
-### 仓库操作
+### 仓库操作
 `$ ssh-keygen -t rsa -C "youremail@example.com"` 然后一直回车，新建SSH，会出现在默认目录里 **id_ras**是私钥　 **id_ras.pub**是公钥　将公钥添加到github里
 
 `git push origin master`
@@ -47,7 +47,7 @@ git 中 HEAD表示当前版本  HEAD^表示上个版本  HEAD^^表示上�
 
 `$ git clone git@github.com:michaelliao/gitskills.git` 克隆仓库
 
-### 分支
+### 分支
 查看分支：`git branch`
 创建分支：`git branch <name>`
 切换分支：`git checkout <name>`
