@@ -1,13 +1,13 @@
-##burpsuite ½ØÍ¼
-ÉêÇëÍ·[burpsuite request](request.png)
-ÏìÓ¦Í·[burpsuite response](response.png)
-##chrome  ½ØÍ¼ 
-chrome½ØÍ¼[chrome](chrome head.png)
+## burpsuite æˆªå›¾
+[ç”³è¯·å¤´](request.png)<br/>
+[å“åº”å¤´](response.png)
+## chrome  æˆªå›¾
+[chromeæˆªå›¾](chrome.png)
 
-ÔÚä¯ÀÀÆ÷ÊäÈëwww.baidu.comºó²¢°´»Ø³µ
- 1.ä¯ÀÀÆ÷Í¨¹ýÓòÃûÊ¶±ðµ½URL
- 2.Í¨¹ýURL½øÐÐDNS½âÎö£¬²éÕÒÍøÖ·µÄipµØÖ·
- 3.¿Í»§¶ËÏò·þÎñÆ÷·¢ËÍTCPÇëÇó£¬Èý´ÎÎÕÊÖ
- 4.·¢ËÍHTTPÇëÇó
- 5.·þÎñÆ÷´¦ÀíÇëÇó²¢·µ»ØHTTP±¨ÎÄ£¨Â·ÓÉÑ°Ö·£¿£©
- 6.ä¯ÀÀÆ÷½âÎö
+åœ¨æµè§ˆå™¨è¾“å…¥www.baidu.comåŽå¹¶æŒ‰å›žè½¦
+ 1.æµè§ˆå™¨é€šè¿‡åŸŸåè¯†åˆ«åˆ°URL
+ 2.é€šè¿‡URLè¿›è¡ŒDNSè§£æžï¼ŒæŸ¥æ‰¾ç½‘å€çš„ipåœ°å€
+ 3.å®¢æˆ·ç«¯å‘æœåŠ¡å™¨å‘é€TCPè¯·æ±‚ï¼Œä¸‰æ¬¡æ¡æ‰‹
+ 4.å‘é€HTTPè¯·æ±‚
+ 5.æœåŠ¡å™¨å¤„ç†è¯·æ±‚å¹¶è¿”å›žHTTPæŠ¥æ–‡ï¼ˆè·¯ç”±å¯»å€ï¼Ÿï¼‰
+ 6.æµè§ˆå™¨è§£æž
