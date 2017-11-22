@@ -39,4 +39,28 @@ id | name | say something
 37|Melody97|enen
 38|ZoEplA| ......
 39|hxxxxxx|溜了溜了
-40|WeC9|   你好，周末 加油！！！
+40|WeC9|   你好，周末 加油！！！emmmm
+41|lmwzero|11111
+42|Michael|逆向来凑个热闹
+43|black-vitasoy|bug
+44|aassqq|123
+45|firaaa|加油加油吧
+46|zidahong|= =
+47|onerice0111|em.......
+48|onerice0111|原来之前一直在自己库里
+49|liqianlan|同上
+50|lll97|原来之前一直在自己库里
+51| faker|签到
+52|uioonm|emmmm
+52|jsomething-for-nothing|披马甲上阵
+53|mongmei233|hei
+54|dogbigface|我要晕啦
+55|Arzuu1216|  签到
+56|Allen|   emmmmmmmmmmm..
+57|LLLAAA1| lllll
+58|Interstellar2|原来如此
+59|faker8|签到
+60|IchBinHao|Sorry i am late
+61| parrot | 新的开始
+62|  omiga |  棒棒哒
+63| Nightlue | shjnfjsugnjnuie
