@@ -13,3 +13,5 @@ git commit -m "add distributed"
 git log  查看日志
 
 git log --pretty=oneline
+
+git commit -m "understand how stage works"
