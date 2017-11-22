@@ -17,3 +17,7 @@ git log --pretty=oneline
 git commit -m "understand how stage works"
 
 git checkout -- file
+
+git rm test.txt
+
+git commit -m "remove test.txt
