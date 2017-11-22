@@ -34,6 +34,7 @@
 - ESP：指向堆栈中即将被操作的那个地址
 
 #####4.标志寄存器
+
 ![image.png](http://upload-images.jianshu.io/upload_images/9168578-c401d6194ab1f11b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
