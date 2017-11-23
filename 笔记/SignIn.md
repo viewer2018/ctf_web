@@ -65,4 +65,4 @@ id | name | say something
 62|  omiga |  棒棒哒
 63| Nightlue | shjnfjsugnjnuie
 64| ljd321|666
-65| Alex
+65| Alex | I really dont know how to use this thing
