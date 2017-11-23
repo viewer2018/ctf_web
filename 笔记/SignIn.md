@@ -64,4 +64,8 @@ id | name | say something
 61| parrot | 新的开始
 62|  omiga |  棒棒哒
 63| Nightlue | shjnfjsugnjnuie
+<<<<<<< HEAD
+64|LinZengQiu|任务加重了
+=======
 64| ljd321|666
+>>>>>>> b6a5744ae1f894e6ae35dad9c9d8dc37fd1c5cd5
