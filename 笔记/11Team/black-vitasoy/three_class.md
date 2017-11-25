@@ -1,4 +1,4 @@
-##登录
+## 登录
 ```
   <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -35,7 +35,8 @@
 </body>
 </html>
 ```
-##留言框
+## 留言框
+```
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -67,7 +68,9 @@
 <body>
 </body>
 </html>
-##图片上传
+```
+## 图片上传
+```
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -80,5 +83,6 @@
 <input type = "file" name = "file" id = "uploade" />
 </body>
 </html>
+```
 ####这个认证有点难,我也不怎么会
 [百度代码](http://www.jb51.net/article/95808.htm)
