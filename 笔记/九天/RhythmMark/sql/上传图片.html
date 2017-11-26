@@ -1,0 +1,59 @@
+<!DOCTYPE html>  
+<html xmlns="http://www.w3.org/1999/xhtml">  
+    <head>  
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+    <title>提交图片</title>  
+    </head>  
+    <body>  
+        <img id="tempimg" dynsrc="" src="" style="display:none" />  
+        <input type="file" name="file" id="fileuploade" size="40" />  <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" name ="check" value="checkfilesize" onclick="checkfile()"/>  
+  
+    </body>  
+    <script type="text/javascript">  
+		var minsize = 20*1024;
+        var maxsize = 2*1024*1024;//设置图片的大小，单位：bit,现在为20kb到2M
+        var  browserCfg = {};  
+        var ua = window.navigator.userAgent;  
+        if (ua.indexOf("MSIE")>=1){  
+            browserCfg.ie = true;  
+        }else if(ua.indexOf("Firefox")>=1){  
+            browserCfg.firefox = true;  
+        }else if(ua.indexOf("Chrome")>=1){  
+            browserCfg.chrome = true;  
+        }  
+        function checkfile(){  
+          
+                var obj_file = document.getElementById("fileuploade");  
+                if(obj_file.value==""){  
+                    alert("请先选择上传文件");  
+                    return;  
+                }  
+                var filesize = 0;  
+                if(browserCfg.firefox || browserCfg.chrome ){  
+                    filesize = obj_file.files[0].size;  
+                }else if(browserCfg.ie){  
+                    var obj_img = document.getElementById('tempimg');  
+                    obj_img.dynsrc=obj_file.value;  
+                    filesize = obj_img.fileSize;  
+                }else{  
+                    alert("建议使用IE、FireFox、Chrome浏览器。");  
+                return;  
+                }  
+                if(filesize==-1){  
+                    alert("建议使用IE、FireFox、Chrome浏览器。");  
+                    return;  
+                }else if(filesize>maxsize){  
+                    alert("上传的附件文件不能超过"+maxsize/(1024*1024)+"MB");  
+                    return;  
+                }
+				else if(filesize<minsize){  
+                    alert("上传的附件文件不能小于"+minsize/1024+"KB");  
+                    return;  
+                }else{  
+                    alert("文件大小符合要求");  
+                    return;  
+ 
+            }  
+        }  
+    </script>  
+</html>  
