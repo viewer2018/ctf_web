@@ -1,0 +1,123 @@
+#学习笔记三
+
+###一、html实例
+
+#####html登录页面
+
+>代码如下：
+```
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><title>Document</title>
+<style type="text/css">
+*{
+margin: 0;
+padding: 0;
+}
+div{
+position: absolute;
+top: 50%;
+left:50%;
+margin: -150px 0 0 -150px;
+width: 300px;
+height: 300px;
+
+}
+input{
+width:298px;
+height: 30px;
+border: 1px solid black;
+margin-top: 30px;
+}
+button{
+width:298px;
+height: 30px;
+border: 1px solid black;
+margin-top: 30px;
+box-sizing: content-box;
+border-radius: 10px;
+}
+</style>
+</head>
+<body>
+<div>
+<form>
+<inputtype="text" required="required" placeholder="用户名"/>
+<inputtype="password" required="required" placeholder="密码"/>
+<buttontype="submit">登录</button>
+</form>
+</div>
+</body>
+</html>
+``` 
+
+#####html提交发言页面
+
+<!DOCTYPE html> <html xmlns> <head> <title>提交留言-hovertree</title> </head> <body> <div style="width:800px;margin:10px auto"> <h2>提交留言</h2> <table><tr><td> 标题：</td><td><input type="text" style="width:500px" /></td></tr> <tr><td>内容：</td><td><textarea style="width:500px;height:200px"></textarea></td></tr> <tr><td>留言者：</td><td><input type="text" style="width:500px" /></td></tr> <tr><td></td><td><input type="button" value="提交" /></td></tr> </table> </div> <div style="width:800px;margin:10px auto;font-family:Arial, Helvetica, sans-serif;text-align:center;"></div> </body> </html>
+>代码如下：
+```
+<!DOCTYPE html>
+<html xmlns>
+  <head> 
+   <title>提交留言-hovertree</title> 
+  </head>
+  <body>
+   <div style="width:800px;margin:10px auto"> 
+   <h2>提交留言</h2>
+    <table>
+    <tr>
+    <td> 标题：</td>
+    <td>
+    <input type="text" style="width:500px" />
+    </td>
+    </tr>
+     <tr>
+     <td>内容：</td>
+     <td>
+     <textarea style="width:500px;height:200px">
+     </textarea>
+     </td>
+     </tr>
+      <tr>
+      <td>留言者：</td>
+      <td><input type="text" style="width:500px" /></td>
+      </tr>
+       <tr>
+       <td></td>
+       <td>
+       <input type="button" value="提交" />
+       </td>
+       </tr>
+       </table> 
+       </div> 
+       <div style="width:800px;margin:10px auto;font-family:Arial, Helvetica, sans-serif;text-align:center;"></div> 
+  </body> 
+</html>
+```
+#####html上传图片页面
+```
+<div class="form-group">
+<label class="col-md-2 control-label">缩略图</label>
+<div class="col-md-2">
+<input type="hidden" name="news.thumbnail_atta_id" value="${news.thumbnail_atta_id!}" id="thumbnail_atta_id"/>
+<div class="col-md-2">
+@ if (!isEmpty(news.thumbnail_atta_id)) {
+<div class="row" style="margin-bottom:5px;">
+<button type="button" class="btn btn-primary" id="showThumbnail">查看</button>
+</div>
+@ }
+<div class="row">
+<span class="btn btn-success fileinput-button">
+    <i class="glyphicon glyphicon-plus"></i>
+    <span>上传...</span>
+    <input id="fileupload" type="file" data-url="/atta/upload/news-thumbnail" multiple>
+</span>
+</div>
+</div>
+<div>
+< img src="" id="thumbnail" width="150" height="100" style="display:none;"/>
+</div>
+</div>
+</div>
+```
