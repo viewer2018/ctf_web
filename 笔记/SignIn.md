@@ -67,3 +67,4 @@ id | name | say something
 65|LinZengQiu|任务加重了
 66| ljd321|666
 67|Lzy-wi|签到
+68| Alex | I really dont know how to use this thing
