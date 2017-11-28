@@ -58,7 +58,8 @@ myTest();//-3
 ?>
 ```
 * 一个变量的变量名可以动态设置和使用
-![Alt text](./1511890728405.png)
+
+![动态设置变量名](../src/1511890728405.png)
 
 
 ## 2.3 `PHP`输出文本的基础指令：`echo`和`print`
@@ -73,7 +74,8 @@ myTest();//-3
 
 ## 2.4 数据类型
 **PHP 支持八种原始类型**
-![Alt text](./src/1511888691301.png)
+
+![Alt text](../src/1511888691301.png)
 * 布尔型
 	* `true`or`false`
 	* 大小写不敏感
@@ -200,8 +202,9 @@ echo GREETING;
 define("GREETING","Welcome to W3School.com!",true);
 echo greeting;
 ```
-常用魔术常量：
-![Alt text](./src/1511889891178.png)
+常用魔术常量:
+
+![Alt text](../src/1511889891178.png)
 
 ## 2.9 函数
 ```
