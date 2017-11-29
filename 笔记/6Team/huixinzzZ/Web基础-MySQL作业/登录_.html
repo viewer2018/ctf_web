@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <head>
+        <title>html登录页面——js本地验证</title>
+    </head>
+	
+    <body>
+	
+        <script>    
+            function js_test()
+			{
+                var USERNAME = document.pagelogin.username.value;
+				var PASSWORD = document.pagelogin.password.value;
+				
+				if(USERNAME=="huixinzzZ"&&PASSWORD=="123456")
+				{
+				  alert("登录成功");
+				  return true;
+				}
+				else
+				  alert("账户名或密码错误");
+				return false;
+            }
+        </script>
+		
+        <form name="pagelogin" onsubmit="return js_test()">
+
+                    <table border="0" cellspacing="0" cellpadding="0">
+                        <tbody>
+						
+                            <tr>
+                                <th>账号</th>
+                                <td width="245">
+                                    <input  type="text" name="username" placeholder="请输入账号" >
+								</td>
+                            </tr>
+							
+                            <tr>
+                                <th>密码</th>
+                                <td width="245">
+                                    <input  type="password" name="password" placeholder="请输入密码" >
+                                </td> 
+                            </tr>
+							
+                            <tr>
+							    <th></th>
+                                <td width="245"><input  type="submit" value="登  录"></td>
+                            </tr>
+							
+                        </tbody>
+                    </table>
+    
+        </form>
+    </body>
+</html>
