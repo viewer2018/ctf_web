@@ -352,6 +352,7 @@ r = requests.get(url, params=payload)
 print r.text
 ```
 ## 3.4 session
+会话对象让你能够跨请求保持某些参数。它也会在同一个 Session 实例发出的所有请求之间保持 cookie， 期间使用 urllib3 的 connection pooling 功能。所以如果你向同一主机发送多个请求，底层的 TCP 连接将会被重用，从而带来显著的性能提升。
 ```
 #-*- coding:utf-8 -*-
 import requests
@@ -365,8 +366,8 @@ headers = { "Accept":"text/html,application/xhtml+xml,application/xml;",
             "Referer":"http://www.example.com/",
             "User-Agent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36"
             }
-res1 = s.post(url1, data=data)
-res2 = s.post(url2)
+res1 = s.post(url1, data=data，headers=headers)
+res2 = s.post(url2，headers=headers)
 print(resp2.content)
 ```
 # 4. 相关资料
