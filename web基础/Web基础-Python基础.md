@@ -1,5 +1,7 @@
 @(CTF)[Python基础]
+
 [TOC]
+
 下面我们来学习python基础
 # python学习笔记
 
@@ -145,14 +147,7 @@ Jack
 >>> s
 'Jack\n'
 ```
-```
-#!/usr/bin/python
-# -*- coding: UTF-8 -*-
 
-import sys
-
-print(sys.argv)
-```
 ### 一个完整的例子
 ```python3
 #!/usr/bin/env python
@@ -172,7 +167,7 @@ print(sys.argv)
 ```
 * 运行
 ```python3
-E:\ctf_web\test>test.py
+x:\ctf_web\test>test.py
 ['x:\\ctf_web\\test\\test.py']
 ```
 ## 2.3 变量
@@ -281,11 +276,11 @@ for num in range(10,20):  # 迭代 10 到 20 之间的数字
       print num, '是一个质数'
 ```
 
-![Alt text](./1512372695730.png)
+![Alt text](../src/python/1512372695730.png)
 
 * 循环控制语句
 
-![Alt text](./1512372762566.png)
+![Alt text](../src/python/1512372762566.png)
 
 ## 2.7 函数
 * 函数语法
