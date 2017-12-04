@@ -366,6 +366,8 @@ res2 = s.post(url2)
 print(resp2.content)
 ```
 # 4. 相关资料
+以上关于python的学习笔记是最浅显的，要真正掌握它需要大家利用业余的时间持续练习。
+给出相关学习链接如下：
 [合天-Python编程基础（上）](http://www.hetianlab.com/expc.do?ec=ECID172.19.104.182015082708595900001)
 
 [合天-Python编程基础（下）](http://www.hetianlab.com/expc.do?ec=ECID172.19.104.182015082709123800001)
