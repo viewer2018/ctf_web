@@ -16,10 +16,13 @@
 ### 电脑安装多个版本的python
 如果只装一个版本可以跳过此步骤
 * 首先按照教程[安装python2.7](https://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/001374738150500472fd5785c194ebea336061163a8a974000)
- ![Alt text](./1512360951392.png)
+ 
+ ![Alt text](../src/python/1512360951392.png)
 
 * 然后[安装python3.6](https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/0014316090478912dab2a3a9e8f4ed49d28854b292f85bb000)
-![Alt text](./1512360981418.png)
+
+![Alt text](../src/python/1512360981418.png)
+
 * 使用方法1 -- `py.exe`
 Python社区就给出了官方解决方案,我们在安装Python3（>=3.3）时，Python的安装包实际上在系统中安装了一个启动器py.exe，默认放置在文件夹C:\Windows\下面。这个启动器允许我们指定使用Python2还是Python3来运行代码（当然前提是你已经成功安装了Python2和Python3）。[参考](https://www.zhihu.com/question/21653286)
 ```
@@ -37,7 +40,8 @@ pip 9.0.1 from C:\Python36\lib\site-packages (python 3.6)
 ```
 * 使用方法二
 以`Python2.7`为例，在`Python2.7`目录下，直接将`python.exe`重命名为`python2.exe`
-![Alt text](./1512362008366.png)
+
+![Alt text](../src/python/1512362008366.png)
 
 ```
 C:\Users\Administrator>python2 -V
@@ -100,7 +104,9 @@ hello world!
 * 所有 Python 的关键字只包含小写字母
 * 这些保留字不能用作常数或变数，或任何其他标识符名称
 * `pass`是空语句，是为了保持程序结构的完整性。
-![Alt text](./1512369192040.png)
+
+![Alt text](../src/python/1512369192040.png)
+
 ### 行与缩进
 * python 最具特色的就是用缩进来写模块
 * 缩进的空白数量是可变的，但是所有代码块语句必须包含相同的缩进空白数量，这个必须严格执行
@@ -167,7 +173,7 @@ print(sys.argv)
 * 运行
 ```python3
 E:\ctf_web\test>test.py
-['E:\\ctf_web\\test\\test.py']
+['x:\\ctf_web\\test\\test.py']
 ```
 ## 2.3 变量
 
@@ -274,8 +280,11 @@ for num in range(10,20):  # 迭代 10 到 20 之间的数字
    else:                  # 循环的 else 部分
       print num, '是一个质数'
 ```
+
 ![Alt text](./1512372695730.png)
+
 * 循环控制语句
+
 ![Alt text](./1512372762566.png)
 
 ## 2.7 函数
