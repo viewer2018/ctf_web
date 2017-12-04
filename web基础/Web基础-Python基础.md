@@ -203,9 +203,9 @@ Python解释器干了两件事情：
 |type|类型|备注|
 |:--:|:--:|:--:|
 |int|整数|没有大小限制|
-|float|浮点数|没有大小限制，但是超出一定范围就直接表示为 inf(无限大)|
+|float|浮点数|没有大小限制，但是超出一定范围就直接表示为`inf`(无限大)|
 |str|字符串|
-|bool|布尔值|(True|False)|
+|bool|布尔值|(`True`或者`False`)|
 |None|空值|
 
 * python内置数据类型
@@ -373,6 +373,7 @@ print(resp2.content)
 # 4. 相关资料
 以上关于python的学习笔记是最浅显的，要真正掌握它需要大家利用业余的时间持续练习。
 给出相关学习链接如下：
+
 [合天-Python编程基础（上）](http://www.hetianlab.com/expc.do?ec=ECID172.19.104.182015082708595900001)
 
 [合天-Python编程基础（下）](http://www.hetianlab.com/expc.do?ec=ECID172.19.104.182015082709123800001)
@@ -383,7 +384,6 @@ print(resp2.content)
 
 [中文Python笔记](https://github.com/lijin-THU/notes-python)
 
-## python进阶
 [Python 学习笔记 第二版.pdf](https://github.com/qyuhen/book/blob/master/Python%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%20%E7%AC%AC%E4%BA%8C%E7%89%88.pdf)
 
 http://www.jianshu.com/p/e1f8b690b951
