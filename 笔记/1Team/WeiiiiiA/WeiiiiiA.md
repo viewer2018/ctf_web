@@ -7,4 +7,4 @@
 哎哟，不会在GitHub上编辑md文件，只能上别的网站编辑了。
 ***
 1.又不会把图片上传上去，真的是好气啊。
-![1](https://github.com/WeiiiiiA/ctf_web/blob/master/%E7%AC%94%E8%AE%B0/%E7%AC%ACX%E7%BB%84/%E6%88%AA%E5%9B%BE%E8%AF%B7%E6%B1%82%E5%A4%B4%E5%92%8C%E5%8F%8D%E5%BA%94%E5%A4%B4.jpg)
+![image](https://github.com/WeiiiiiA/ctf_web/blob/master/%E7%AC%94%E8%AE%B0/%E7%AC%ACX%E7%BB%84/%E6%88%AA%E5%9B%BE%E8%AF%B7%E6%B1%82%E5%A4%B4%E5%92%8C%E5%8F%8D%E5%BA%94%E5%A4%B4.jpg)
