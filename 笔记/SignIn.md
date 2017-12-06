@@ -26,7 +26,45 @@ id | name | say something
 24|kwongyuet|yeah
 25|Galletas|heyheyhey
 26|hhdidid|yeah
-27|saltedfish666|nothing
+27|saltedfish666|nothing＋hello world
 28|3sd|325
 29|  hhdidid | yeah
 30|junjunvv|lalala~
+31|0hy0ung|boomshakalaka
+32|huoluobei1|学得会    有点蒙 
+33| HenMan9|666666
+34|withwindluo|hello world
+35|churlinchen|aaaaa
+36|Melody97|aaa
+37|Melody97|enen
+38|ZoEplA| ......
+39|hxxxxxx|溜了溜了
+40|WeC9|   你好，周末 加油！！！emmmm
+41|lmwzero|11111
+42|Michael|逆向来凑个热闹
+43|black-vitasoy|bug
+44|aassqq|123
+45|firaaa|加油加油吧
+46|zidahong|= =
+47|onerice0111|em.......
+48|onerice0111|原来之前一直在自己库里
+49|liqianlan|同上
+50|lll97|原来之前一直在自己库里
+51| faker|签到
+52|uioonm|emmmm
+53|jsomething-for-nothing|披马甲上阵
+54|mongmei233|hei
+55|dogbigface|我要晕啦
+56|Arzuu1216|  签到
+57|Allen|   emmmmmmmmmmm..
+58|LLLAAA1| lllll
+59|Interstellar2|原来如此
+60|faker8|签到
+61|IchBinHao|Sorry i am late
+62| parrot | 新的开始
+63|  omiga |  棒棒哒
+64| Nightlue | shjnfjsugnjnuie
+65|LinZengQiu|任务加重了
+66| ljd321|666
+67|Lzy-wi|签到
+68| Alex | I really dont know how to use this thing
