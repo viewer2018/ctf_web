@@ -276,7 +276,7 @@ SET GLOBAL general_log = 'ON'
 * username，字符型，为所在小组成员github id号
 * password，字符型，使用PASSWORD函数加密
 
-并对数据库、表、列，数据其进行增删该查
+并对数据库、表、列，数据其进行增删改查
 
 ## 5.提交学习笔记
 写代码时请加上注释

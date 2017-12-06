@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <head>
+        <title>提交发言 </title>
+    </head>
+    
+<body>
+       
+ <script>    
+            function js_test()
+			{
+			  var CONTENT = document.message.content.value;
+			  if (CONTENT.length == 0) 
+			       alert('内容不能为空'); 
+				   
+			  else alert("发表成功");   
+            }
+</script>
+ 
+		
+<form   name="message" onsubmit="return js_test()">  
+ <h2>提交发言</h2>
+ <table>
+ 
+ <tr>
+ <td>内容：</td> <td><textarea style="width:500px;height:200px" name="content"></textarea></td>
+ </tr>
+
+ <tr>
+ <td></td>  <td><input type="submit" value="提 交" /></td>
+ </tr>
+
+ </table>   
+</form>  
+
+</body>
+</html>
