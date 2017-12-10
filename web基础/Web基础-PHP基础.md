@@ -189,6 +189,10 @@ $arrs = array("red","green","blue","yellow");
 foreach($arrs as $value){
 	echo "$value <br>";
 }
+foreach($arrs as $key => $value)
+{
+	echo "$key => $value".'<br>';
+}
 ```
 ## 2.8 定义常量
 `PHP`使用`define`来定义常量
