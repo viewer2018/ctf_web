@@ -22,25 +22,38 @@ https://pan.baidu.com/s/1eR3Myrg 3fnb
 
 * [phpStudy](http://www.phpstudy.net/phpstudy/phpStudy20161103.zip)
 解压，然后点击`phpStudy20161103.exe`进行安装，我选择的安装路径为`C:\phpStudy`,安装完成后运行界面如下：
+
 ![Alt text](../src/BruteForce/1512983560605.png)
+
 mysql 的默认口令：`root:root`
+
 ![Alt text](../src/BruteForce/1512983713276.png)
 
 ## 2. 配置DVWA
 * 将`DVWA-1.9.zip`解压到`C:\phpStudy\WWW`路径下，并重命名为`DVWA`
+
 ![Alt text](../src/BruteForce/1512984105262.png)
-*  修改默认配置中的数据库密码
+
+* 修改默认配置中的数据库密码
 修改`C:\phpStudy\WWW\DVWA\config\config.inc.php`文件中`db_password`的值为默认密码`root`
+
  ![Alt text](../src/BruteForce/1512984195773.png)
- * 访问`http://127.0.0.1/dvwa/setup.php`进行配置
+ 
+* 访问`http://127.0.0.1/dvwa/setup.php`进行配置
+ 
  ![Alt text](../src/BruteForce/1512985061391.png)
+ 
 红色部分表示有问题的，但暂时不影响学习，可以到需要的时候再修改
- * 点击`Create/Reset Database`创建数据库
+* 点击`Create/Reset Database`创建数据库
+ 
   ![Alt text](../src/BruteForce/1512985131581.png)
-  * 成功创建数据库后，页面会自动跳转到登陆页面，使用默认口令`admin:password`进行登陆做题学习
+  
+* 成功创建数据库后，页面会自动跳转到登陆页面，使用默认口令`admin:password`进行登陆做题学习
+
   ![Alt text](../src/BruteForce/1512985283943.png)
 
 * 刚开始我们将难度设置为`Low`，后续根据学习情况进行其他级别设置
+
 ![Alt text](../src/BruteForce/1512985620958.png)
 
 
@@ -55,7 +68,9 @@ mysql 的默认口令：`root:root`
 ## 1. Low
 
 ### 服务器端核心代码
+
 ![Alt text](../src/BruteForce/1513050713394.png)
+
 可以看到，服务器只是验证了参数`Login`是否被设置（`isset`函数在`php`中用来检测变量是否设置，该函数返回的是布尔类型的值，即`true/false`），没有任何的防爆破机制，且对参数username、password没有做任何过滤，存在明显的sql注入漏洞。
 
 ### 漏洞利用
@@ -65,39 +80,51 @@ mysql 的默认口令：`root:root`
 
 参考步骤如下：
 1. 打开burpsuite，配置好Lceweasel浏览器代理
+
 ![Alt text](../src/BruteForce/1513051816931.png)
+
 2. 输入dvwa网址，进入Brute Force界面，随便输入一个用户名和密码，进行抓包
 
 ![Alt text](../src/BruteForce/1513052426469.png)
+
 抓包结果为：
 
 ![Alt text](../src/BruteForce/1513052384833.png)
 
 3. 在`Request`版面下右键，选择`Send to Instruder`
+
 ![Alt text](../src/BruteForce/1513052855648.png)
 
 4. 在`Instruder`模块，
+
  a. 选择admin和password为爆破参数
+ 
 ![Alt text](../src/BruteForce/1513055234639.png)
 
  b. 选择`Cluster bomb`攻击类型
+ 
 ![Alt text](../src/BruteForce/1513053167828.png)
 
  c. 选择payload set 1
+ 
 ![Alt text](../src/BruteForce/1513055296578.png)
 
  d. 选择payload set 2
 [参考字典](http://wiki.jeary.org/#!top10000pass.md)
+
 ![Alt text](../src/BruteForce/1513055424585.png)
 
  e. 点击`Start attack`,开始爆破
 
 5. 最后，尝试在爆破结果中找到正确的密码，可以看到password的响应包长度（length）**与众不同**，可推测password为正确密码，手工验证登陆成功。可点击Length进行排序，选择最大或者最小的异常包。
+
 ![Alt text](../src/BruteForce/1513056403475.png)
 
 ## 2. Medium
 ### 核心代码如下：
+
 ![Alt text](../src/BruteForce/1513058008530.png)
+
 相比Low级别的代码，Medium级别的代码主要增加了
 * `mysql_real_escape_string`函数，这个函数会对字符串中的特殊符号（`\x00`,`\n`,`\r`,`\`,`'`,`"`,`x1a`）进行转义，基本上能够抵御sql注入攻击，说基本上是因为查到说 `MySQL5.5.37`以下版本如果设置编码为GBK，能够构造编码绕过`mysql_real_escape_string` 对单引号的转义(有兴趣的同学可以试试)；
 * $pass做了MD5校验，杜绝了通过参数password进行sql注入的可能性。
@@ -109,43 +136,60 @@ mysql 的默认口令：`root:root`
 
 ## 3. high
 ### 服务端核心代码
+
 ![Alt text](../src/BruteForce/1513058982718.png)
+
 * High级别的代码加入了`Token`，可以抵御CSRF攻击，同时也增加了爆破的难度，通过抓包，可以看到，登录验证时提交了四个参数：username、password、Login以及user_token。
+
 ![Alt text](../src/BruteForce/1513059036465.png)
+
 每次服务器返回的登陆页面中都会包含一个随机的user_token的值，用户每次登录时都要将user_token一起提交。服务器收到请求后，会优先做token的检查，再进行sql查询。
+
 ![Alt text](../src/BruteForce/1513059117687.png)
+
 * 同时，High级别的代码中，使用了stripslashes（去除字符串中的反斜线字符,如果有两个连续的反斜线,则只去掉一个）、 mysql_real_escape_string对参数username、password进行过滤、转义，进一步抵御sql注入。
+
 ### 漏洞利用
 #### 方法一、使用Burpsuite的Macros功能爆破Token
 Burpsuite中的Macros就是获取响应报文中的一些值，例如Token，然后自动替换下一个请求报文中的参数值。具体设置方法如下：
 1. 切换到 Burpsuite 的 Project options 选项卡，点击Macros下的add按钮 
+
 ![Alt text](../src/BruteForce/1513061629222.png)
 
 2. 点击add按钮之后，这时候弹出两个窗口，一个是Macro 记录器，一个是Macro编辑器，Macro记录器是记录发送那些HTTP请求，Macro编辑器是编辑一些参数，比如具体截取响应报文中的哪一个参数等等
 
 3. 首先操作Macro记录器，点击选择我们要发送HTTP请求，然后点击右下角的OK按钮即可（比如下图这样）
+
 ![Alt text](../src/BruteForce/1513065504607.png)
 
 4. 然后开始操作Macro编辑器， 选择右侧Configure item, 在弹出的界面中找到`Custom parameter locations in response`区域，然后点击右侧的 Add按钮
+
 ![Alt text](../src/BruteForce/1513066747593.png)
 
 5. 在弹出的窗口中，首先给要截取得参数值命名，我这里命名为`user_token` ，然后用鼠标选择我们要截取的内容，这里就把`user_token`的32位数字和字母的值选取了即可，如果出现如下界面就表示OK了
+
 ![Alt text](../src/BruteForce/1513065745023.png)
 
 然后点击右下角的OK，然后在所有回到的界面中继续点击右下角的OK
 
 6. 测试下Macro是否设置正确，下图所示正确产生新的token即可。至此，我们就配置完毕了Macro。
+
 ![Alt text](../src/BruteForce/1513065882305.png)
 
 7. 接着开始让Burpsuite自动调用Macros，并替换经过代理的请求中的`user_token`的值。我们切换回Project options 的选项卡，找到Session Handling Rules
+
 ![Alt text](../src/BruteForce/1513066068389.png)
 
 在弹出的界面中进行如下设置，然后点击ok
+
 ![Alt text](../src/BruteForce/1513066223899.png)
 
 点击Scope，进行如下设置，这里仅更新`Intruder`模块中的请求
+
 ![Alt text](../src/BruteForce/1513066280757.png)
+
 8. 然后进行爆破，结果如下：
+
 ![Alt text](../src/BruteForce/1513066476119.png)
 
 
@@ -207,7 +251,9 @@ P@ssword
 
 ## 4. Impossible
 ### 服务器端核心代码
+
 ![Alt text](../src/BruteForce/1513059850299.png)
+
 * Impossible级别的代码加入了可靠的防爆破机制，当检测到频繁的错误登录后，系统会将账户锁定，爆破也就无法继续。
 * 同时采用了更为安全的PDO（[PHP Data Object](http://www.cnblogs.com/pinocchioatbeijing/archive/2012/03/20/2407869.html)）机制防御sql注入，这是因为不能使用PDO扩展本身执行任何数据库操作，而sql注入的关键就是通过破坏sql语句结构执行恶意的sql命令
 
