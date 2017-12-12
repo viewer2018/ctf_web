@@ -292,4 +292,5 @@ P@ssword
 3. http://search.freebuf.com/search/?search=dvwa#article
 
 # 作业
-查找资料，完成DVWA漏洞类型`Brute Force`的学习，提交详细学习笔记。（请大家以这个学习笔记为模版，整理自己的学习笔记）
+1. 查找资料，完成DVWA漏洞模块`Brute Force`的学习，提交详细学习笔记。
+2. 完成DVWA漏洞类型`Command Injection`的学习，提交详细学习笔记。（请大家以`Brute Force`的学习笔记为模块，整理自己的学习笔记）
