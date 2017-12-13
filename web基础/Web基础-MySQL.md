@@ -84,6 +84,7 @@ MySQL> select now();
 ```
 ### 2. 执行编写好的sql脚本
 ```
+# 此方法一般用来导入数据库
 mysql> source H:/1.sql
 +---------------------+
 | now()               |
@@ -94,7 +95,11 @@ mysql> source H:/1.sql
 
 mysql -u用户名 -p密码 数据库名 < 数据库名.sql
 #mysql -uabc_f -p abc < abc.sql
+
+导出数据库：mysqldump -u 用户名 -p 数据库名 > 导出的文件名 
+mysqldump -u root -p news > news.sql
 ```
+
 ### 3. `select ...into outfile` 方式执行sql
 ```
 例1:
