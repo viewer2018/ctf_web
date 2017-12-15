@@ -167,6 +167,9 @@ mysql -D samp_db -u root -p < createtable.sql
 #insert [into] 表名 [(列名1, 列名2, 列名3, ...)] values (值1, 值2, 值3, ...);
 insert into students values(NULL, "王刚", "男", 20, "13811371377");
 insert into students (name, sex, age) values("孙丽华", "女", 21);
+
+＃1
+insert into users SET username='ewrfg2', password='wer443';  
 ```
 ## 8. 查询数据
 ```
