@@ -135,6 +135,7 @@ if( isset( $_POST[ 'Submit' ]  ) ) {
 可以看到，相比Low级别的代码，服务器端对ip参数做了一定过滤，即把`&&` 、`;`删除，本质上采用的是黑名单机制，因此依旧存在安全问题。
 ### 相关函数介绍 
 * str_replace
+
 如果 search 和 replace 为数组，那么 str_replace() 将对 subject 做二者的映射替换。如果 replace 的值的个数少于 search 的个数，多余的替换将使用空字符串来进行。如果 search 是一个数组而 replace 是一个字符串，那么 search 中每个元素的替换将始终使用这个字符串。该转换不会改变大小写。
 
 ### 漏洞利用
@@ -383,6 +384,7 @@ if( isset( $_GET[ 'Change' ] ) ) {
 
 ### 相关函数介绍
 * stripos
+
 stripos(string,find)：string规定要搜索的字符串。find规定要查找的字符。stripos() 函数查找字符串在另一字符串中第一次出现的位置（不区分大小写）。返回 find存在于 string字符串开始的位置(独立于偏移量)。同时注意字符串位置起始于 0，而不是 1。如果未发现 find将返回 FALSE。
 ### 漏洞利用
 过滤规则是http包头的Referer参数的值中必须包含主机名（这里是127.0.0.1）
