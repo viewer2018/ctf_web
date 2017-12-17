@@ -90,8 +90,11 @@ stristr函数搜索字符串在另一字符串中的第一次出现，返回字�
 127.0.0.1;dir
 ```
 这个在windows下执行不成功
+
 ![Alt text](../src/CSRF/1513514209260.png)
+
 盗图在Linux下的情况
+
 ![Alt text](../src/CSRF/1513514292300.png)
 
 
@@ -299,7 +302,7 @@ if( isset( $_GET[ 'Change' ] ) ) {
 ```
 http://127.0.0.1/DVWA/vulnerabilities/csrf/?password_new=password&password_conf=password&Change=Change#
 ```
-![Alt text](.../src/CSRF/src/CSRF/1513514516418.png)
+![Alt text](../src/CSRF/src/CSRF/1513514516418.png)
 
 当受害者点击了这个链接，他的密码就会被改成password（这种攻击显得有些拙劣，链接一眼就能看出来是改密码的，而且受害者点了链接之后看到这个页面就会知道自己的密码被篡改了）
 需要注意的是，CSRF最关键的是利用受害者的cookie向服务器发送伪造请求，所以如果受害者之前用Chrome浏览器登录的这个系统，而用搜狗浏览器点击这个链接，攻击是不会触发的，因为搜狗浏览器并不能利用Chrome浏览器的cookie，所以会自动跳转到登录界面。
@@ -312,7 +315,7 @@ http://127.0.0.1/DVWA/vulnerabilities/csrf/?password_new=password&password_conf=
 支持服务器域名是ip所以生成相应的短链接
 提供TXT、JSON、JSONP的接口
 
-![Alt text](.../src/CSRF/src/CSRF/1513514585142.png)
+![Alt text](../src/CSRF/src/CSRF/1513514585142.png)
 
 需要提醒的是，虽然利用了短链接隐藏url，但受害者最终还是会看到密码修改成功的页面，所以这种攻击方法也并不高明。
 ![Alt text](../src/CSRF/1513514605336.png)
@@ -553,5 +556,5 @@ generateSessionToken();
 完成DVWA漏洞类型XSS的学习，提交详细学习笔记。
 ## 3. 复习Command Injection
 完成对下面两道CTF题的学习，并提交详细学习笔记
-[babyfirst-revenge](https://github.com/orangetw/My-CTF-Web-Challenges/blob/master/hitcon-ctf-2017/babyfirst-revenge/index.php)
-[babyfirst-revenge-v2](https://github.com/orangetw/My-CTF-Web-Challenges/blob/master/hitcon-ctf-2017/babyfirst-revenge-v2/index.php)
+* [babyfirst-revenge](https://github.com/orangetw/My-CTF-Web-Challenges/blob/master/hitcon-ctf-2017/babyfirst-revenge/index.php)
+* [babyfirst-revenge-v2](https://github.com/orangetw/My-CTF-Web-Challenges/blob/master/hitcon-ctf-2017/babyfirst-revenge-v2/index.php)
