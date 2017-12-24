@@ -126,7 +126,7 @@ mysql 的默认口令：`root:root`
 ![Alt text](../src/BruteForce/1513058008530.png)
 
 相比Low级别的代码，Medium级别的代码主要增加了
-* `mysql_real_escape_string`函数，这个函数会对字符串中的特殊符号（`\x00`,`\n`,`\r`,`\`,`'`,`"`,`x1a`）进行转义，基本上能够抵御sql注入攻击，说基本上是因为查到说 `MySQL5.5.37`以下版本如果设置编码为GBK，能够构造编码绕过`mysql_real_escape_string` 对单引号的转义(有兴趣的同学可以试试)；
+* `mysql_real_escape_string`函数，这个函数会对字符串中的特殊符号（`\x00`,`\n`,`\r`,`\`,`'`,`"`,`\x1a`）进行转义，基本上能够抵御sql注入攻击，说基本上是因为查到说 `MySQL5.5.37`以下版本如果设置编码为GBK，能够构造编码绕过`mysql_real_escape_string` 对单引号的转义(有兴趣的同学可以试试)；
 * $pass做了MD5校验，杜绝了通过参数password进行sql注入的可能性。
 但是，依然没有加入有效的防爆破机制（sleep(2)实在算不上）。
 
