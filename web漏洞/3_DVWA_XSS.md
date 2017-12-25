@@ -2,8 +2,11 @@
 
 # XSS
 跨站脚本（Cross-Site Scripting，XSS）是一种经常出现在 WEB 应用程序中的计算机安全漏洞，某种意义上也是一种注入攻击,为不和层叠样式表（Cascading Style Sheets，CSS）的缩写混淆，故将跨站脚本攻击缩写为 XSS。攻击者利用网站漏洞把恶意的脚本代码注入到网页中，当其他用户浏览这些网页时，就会执行其中的恶意代码，对受害用户可能采取 Cookies 资料窃取、会话劫持、钓鱼欺骗等各种攻击。
+
 XSS不仅仅限于JavaScript，还包括flash等其它脚本语言。
+
 XSS一般可以分为三类，**反射型的XSS**、**存储型的XSS**和**DOM型XSS**。
+
 DOM型的XSS由于其特殊性，常常被分为第三种，这是一种基于DOM树的XSS。例如服务器端经常使用`document.boby.innerHtml`等函数动态生成html页面，如果这些函数在引用某些变量时没有进行过滤或检查，就会产生DOM型的XSS。DOM型XSS可能是存储型，也有可能是反射型。
 
 下面根据DVWA中的**反射型XSS**和**存储型XSS**实验进行学习
@@ -72,8 +75,11 @@ if( array_key_exists( "name", $_GET ) && $_GET[ 'name' ] != NULL ) {
 可以看到，这里对输入进行了过滤，基于黑名单的思想，使用`str_replace`函数将输入中的`<script>`替换为空，这种防护机制是可以被轻松绕过的。
 ###  相关函数
 **[str_replace](http://php.net/manual/zh/function.str-replace.php)**— 子字符串替换
-`mixed str_replace ( mixed $search , mixed $replace , mixed $subject [, int &$count ] )`
+
+> `mixed str_replace ( mixed $search , mixed $replace , mixed $subject [, int &$count ] )`
+
 **参数解释**
+
 如果 search 和 replace 为数组，那么 str_replace() 将对 subject 做二者的映射替换。如果 replace 的值的个数少于 search 的个数，多余的替换将使用空字符串来进行。如果 search 是一个数组而 replace 是一个字符串，那么 search 中每个元素的替换将始终使用这个字符串。该转换不会改变大小写。
 
 如果 search 和 replace 都是数组，它们的值将会被依次处理。
@@ -92,13 +98,16 @@ search 的替换值。一个数组可以被用来指定多重替换。
 如果被指定，它的值将被设置为替换发生的次数。
 
 **返回值**
+
 该函数返回替换后的数组或者字符串。
+
 ### 漏洞利用
 1. 双写绕过
 `<scr<script>ipt>alert(1)</script>`
 2. 大小写绕过
 `<ScriPt>alert(1)</script>`
 3. 黑名单绕过
+
 例如**Low**中的
 ```
 <img src=1 onerror=alert(1)>
@@ -125,9 +134,13 @@ if( array_key_exists( "name", $_GET ) && $_GET[ 'name' ] != NULL ) {
 ```
 可以看到，High级别的代码同样使用黑名单过滤输入，`preg_replace()` 函数用于正则表达式的搜索和替换，这使得双写绕过、大小写混淆绕过（正则表达式中i表示不区分大小写）不再有效。*（大家可以想想为啥双写没有效呢？）*
 ### 相关函数
+
 **preg_replace** — 执行一个正则表达式的搜索和替换
-`mixed preg_replace ( mixed $pattern , mixed $replacement , mixed $subject [, int $limit = -1 [, int &$count ]] )`
+
+> `mixed preg_replace ( mixed $pattern , mixed $replacement , mixed $subject [, int $limit = -1 [, int &$count ]] )`
+
 搜索subject中匹配pattern的部分， 以replacement进行替换。
+
  **参数解释**
  
  * pattern
@@ -146,9 +159,11 @@ if( array_key_exists( "name", $_GET ) && $_GET[ 'name' ] != NULL ) {
 如果指定，将会被填充为完成的替换次数。
 
 **返回值**
+
 如果subject是一个数组， preg_replace()返回一个数组， 其他情况下返回一个字符串。
 
 如果匹配被查找到，替换后的subject被返回，其他情况下 返回没有改变的 subject。如果发生错误，返回 NULL 。
+
 ### 漏洞利用
 虽然无法使用`<script>`标签注入XSS代码，但是可以通过img、body等标签的事件或者iframe等标签的src注入恶意的js代码
 ```
@@ -217,13 +232,20 @@ if( isset( $_POST[ 'btnSign' ] ) ) {
 ```
 可以看到，对输入并没有做XSS方面的过滤与检查，且存储在数据库中，因此这里存在明显的存储型XSS漏洞。
 ### 相关函数
+
 * `trim(string,charlist)`
+
 函数移除字符串两侧的空白字符或其他预定义字符，预定义字符包括`\t`、`\n`、`\x0B`、`\r`以及空格，可选参数charlist支持添加额外需要删除的字符。
+
 * `mysql_real_escape_string(string,connection)`
+
 这个函数会对字符串中的特殊符号（`\x00`,`\n`,`\r`,`\`,`'`,`"`,`\x1a`）进行转义，基本上能够抵御sql注入攻击，说基本上是因为查到说 MySQL5.5.37以下版本如果设置编码为GBK，能够构造编码绕过`mysql_real_escape_string` 对单引号的转义
 本扩展自 PHP 5.5.0 起已废弃，并在自 PHP 7.0.0 开始被移除
+
 * `stripslashes(string)`
+
 去除字符串中的反斜线字符,如果有两个连续的反斜线,则只去掉一个
+
 ### 漏洞利用
 因为没有做任何过滤，可以直接插入XSSpayload，
 需要注意的是name一栏前端有字数限制，
