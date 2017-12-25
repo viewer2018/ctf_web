@@ -273,7 +273,7 @@ if( isset( $_POST[ 'btnSign' ] ) ) {
 ```
 **相关函数**
 
-* strip_tags() 函数剥去字符串中的 HTML、XML 以及 PHP 的标签，但允许使用<b>标签。
+* strip_tags() 函数剥去字符串中的 HTML、XML 以及 PHP 的标签，但允许使用`<b>`标签。
 
 * addslashes() 函数返回在预定义字符（单引号、双引号、反斜杠、NULL）之前添加反斜杠的字符串。
 
