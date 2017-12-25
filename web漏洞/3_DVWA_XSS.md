@@ -278,6 +278,7 @@ if( isset( $_POST[ 'btnSign' ] ) ) {
 * addslashes() 函数返回在预定义字符（单引号、双引号、反斜杠、NULL）之前添加反斜杠的字符串。
 
 可以看到，由于对message参数使用了`htmlspecialchars`函数进行编码，因此无法再通过message参数注入XSS代码，但是对于name参数，只是简单过滤了`<script>`字符串，仍然存在存储型的XSS。
+
 ### 漏洞利用
 1. 双写绕过
 `<scr<script>ipt>alert(1)</script>`
@@ -290,6 +291,7 @@ if( isset( $_POST[ 'btnSign' ] ) ) {
 <body/onload=alert(25)>
 <img src=1 onerror=prompt(1)//
 ```
+
 ## High
 ### 核心代码
 ```
@@ -319,6 +321,7 @@ if( isset( $_POST[ 'btnSign' ] ) ) {
 ?>
 ```
 可以看到，由于对message参数使用了`htmlspecialchars`函数进行编码，因此无法再通过message参数注入XSS代码,对于name参数这里使用正则表达式过滤了`<script>`标签，但是却忽略了img、iframe等其它危险的标签，因此name参数依旧存在存储型XSS
+
 ### 漏洞利用
 同反射型XSS漏洞High级别利用方式
 ```
@@ -377,10 +380,13 @@ generateSessionToken();
 4. http://blog.csdn.net/qq_35078631/article/details/77073233
 5. http://www.cnblogs.com/xiaozi/p/7268506.html
 6. http://zjw.dropsec.xyz/%E6%BC%8F%E6%B4%9E/2016/08/05/xss%E5%9F%BA%E7%A1%80.html 
-7.  https://www.zhihu.com/question/27646993
+7. https://www.zhihu.com/question/27646993
 
 # 作业
 1. File Inclusion
+
 查找资料，完成DVWA漏洞模块`File Inclusion`的学习，提交详细学习笔记。
+
 2. 复习XSS
+
 自己查找2道XSS有关的CTF题，并提交详细学习笔记
