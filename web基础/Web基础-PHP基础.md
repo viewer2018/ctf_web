@@ -114,13 +114,15 @@ $a = 1e3; // 科学计算法 (等于十进制 1000)
 
 ```
 <?php
-$array = array(
+$array1=array("Volvo","BMW","SAAB");
+
+$array2 = array(
     "foo" => "bar",
     "bar" => "foo",
 );
 
 // 自 PHP 5.4 起
-$array = [
+$array3 = [
     "foo" => "bar",
     "bar" => "foo",
 ];
