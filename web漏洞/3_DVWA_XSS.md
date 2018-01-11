@@ -41,7 +41,7 @@ if( array_key_exists( "name", $_GET ) && $_GET[ 'name' ] != NULL ) {
 
 * `<script>alert(/xss/)</script>`
 * `<script>alert("hello1");</script>`
-* `<script>alert("hello1")</script>`
+* `<script>alert('hello1')</script>`
 
 ![Alt text](../src/XSS/1514130902315.png)
 
@@ -132,7 +132,7 @@ if( array_key_exists( "name", $_GET ) && $_GET[ 'name' ] != NULL ) {
 
 ?> 
 ```
-可以看到，High级别的代码同样使用黑名单过滤输入，`preg_replace()` 函数用于正则表达式的搜索和替换，这使得双写绕过、大小写混淆绕过（正则表达式中i表示不区分大小写）不再有效。*（大家可以想想为啥双写没有效呢？）*
+可以看到，High级别的代码同样使用黑名单过滤输入，`preg_replace()` 函数用于正则表达式的搜索和替换，这使得双写绕过、大小写混淆绕过（正则表达式中i表示不区分大小写）不再有效。*（大家可以想想为啥双写失效了呢？）*
 ### 相关函数
 
 **preg_replace** — 执行一个正则表达式的搜索和替换
