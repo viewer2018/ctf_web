@@ -68,3 +68,4 @@ id | name | say something
 66| ljd321|666
 67|Lzy-wi|签到
 68| Alex | I really dont know how to use this thing
+69|expressDESERT | fighting 2018
